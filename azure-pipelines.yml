@@ -16,12 +16,6 @@ steps:
   displayName: 'Use .NET SDK $(dotnetSdkVersion)'
   inputs:
     version: '$(dotnetSdkVersion)'
-    
-- task: Npm@1
-  displayName: 'Run npm install'
-  inputs:
-    command: 'cache clean'
-    arguments: '--force'
 
 
 - task: Npm@1
